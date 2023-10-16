@@ -1,0 +1,74 @@
+.icon {
+  width: 50px;
+  height: 50px;
+}
+h1 {
+  color: blue;
+  border-bottom: 2px solid grey;
+}
+h2 {
+  border-radius: 50%;
+  background-color: rebeccapurple;
+  color: azure;
+  border: 2px solid black;
+}
+.border-timeline {
+  border-bottom: 1px dotted blue;
+}
+#goals .grid-row {
+  border-bottom: 0.5px solid grey;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    padding: 10%;
+    width: 137%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: blue;
+    padding: 20px;
+  }
+  .grid-scopes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 30px;
+  }
+  .grid-row {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    padding: 15px;
+  }
+  .grid-row div {
+    padding-left: 30px;
+  }
+  #goals {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-color: white;
+  }
+  #scopes {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+    background-color: white;
+  }
+  #team {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background-color: white;
+  }
+  #primary {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+    background-color: white;
+  }
+  #timeline {
+    grid-column: 4 / 5;
+    grid-row: 1 / 5;
+    background-color: white;
+  }
+}

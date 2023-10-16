@@ -1,0 +1,192 @@
+@media only screen and (max-width: 600px) {
+  section .container {
+    margin: auto;
+    display: block;
+    padding: 20px;
+  }
+  /*section 0*/
+  .section0 img {
+    width: 100%;
+    height: 700px;
+    position: relative;
+  }
+  /*insert text into image*/
+
+  #banner {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  /* i for all */
+  i {
+    color: #3333ff;
+  }
+  /*section 1*/
+  #nav-bar a img {
+    display: none;
+  }
+  #nav-bar a {
+    display: block;
+  }
+  /*section2*/
+  #about {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  /*clear the dots of the li ending*/
+  #about .info {
+    list-style-type: none;
+  }
+  #target {
+    background: whitesmoke;
+    padding-top: 40px;
+  }
+  #personal-info {
+    background: #eeeeee;
+    padding-top: 40px;
+  }
+  #target,
+  #personal-info {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /*section 3*/
+  #job-info .container {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+    column-gap: 10px;
+    height: 650px;
+    padding-top: 350px;
+  }
+  #job-info .section3 {
+    border: 1px solid #808080;
+    padding: 10px;
+  }
+  /*create grid-layout for columns content and icon in section3*/
+  .section3-icon {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /*create grid-layout for content in interest and icon*/
+  .list-interest {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .section3 div {
+    position: relative;
+    margin: 0;
+    left: -10px;
+    padding: 20px;
+  }
+  /*insert straight border of column*/
+  .dots:before {
+    content: "";
+    background-image: url(./circle-15.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -0px;
+    top: -50px;
+    height: 30px;
+    width: 30px;
+  }
+  /*section4*/
+  #certificate {
+    padding-top: 2250px;
+    width: 30%;
+  }
+  #certificate h1 {
+    width: 500%;
+  }
+  /*create columns for certificate section*/
+  #certificate .section4 {
+    display: grid;
+    grid-template-rows: 350px 350px 350px;
+    columns-gap: 30px;
+    padding: 60px;
+  }
+  #certificate .section4 img {
+    width: 300px;
+    height: 200px;
+  }
+  /*section5*/
+
+  /*create 3 columns */
+  #project .container .section5 {
+    display: grid;
+    grid-template-columns: 400px;
+    column-gap: 10px;
+  }
+  #project .container .section5 img {
+    width: 400px;
+    height: 300px;
+  }
+  /*creat 2 rows for each columns of section5*/
+  #project .container .section5 .table-section5 {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    line-height: 50px;
+  }
+  .table-project {
+    padding: 20px 5px;
+  }
+  table {
+    text-align: left;
+    background-color: #cc9966;
+    height: 350px;
+  }
+  /*create border for each row*/
+  th:nth-child(1) {
+    border-bottom: 1px solid #333333;
+    width: 30%;
+  }
+  th:nth-child(2) {
+    border-bottom: 1px solid #333333;
+    width: 70%;
+  }
+  /*create borfer-radius for 2021*/
+  #project .container .section5 span {
+    background-color: green;
+    border-radius: 20%/50%;
+    padding: 5px 15px 5px 15px;
+  }
+  #project .container .section5 i {
+    color: #663333;
+    padding: 20px;
+  }
+  /*section6*/
+  #footer .container {
+    display: inline-block;
+    text-align: center;
+  }
+  #footer .container i {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #3333ff;
+    color: white;
+  }
+}
+/*i for sections*/
+.section2 i {
+  color: gray;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+.list-interest i {
+  color: #3333ff;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 2px solid #3333ff;
+  width: 55px;
+  height: 2px;
+  padding-top: 14px;
+  text-align: center;
+}
